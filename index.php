@@ -1,34 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr-FR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Vu-du.net</title>
-</head>
+<?php require 'inc/header.php'; ?>
 
-<body>
-    <header>
-        <nav>
-            <a href="home.php"><img src="images/logo.png" alt="logo"></a>
-            <ul class="nav-link">
-                <li><a href="product.html">Notre produit</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="service.html">Nos services</a></li>
-                <li><a href="news.html">Actus</a></li>
-                <li><a href="contact.html">Prise de contact</a></li>
-                <li><a href="account.php">Mon compte</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="home-text">
+<body class="index">
+        <div class="home-text">
         <p>Ne restez pas invisible sur la toile. Offrez vous une présence web pour que votre activité soit reconnue de tous.
     Soyez "Vu-Du.Net" à partir de 30,00€/mois</p>
     </div>
+<div></div>
 
     <div class="section">
 
-        <h1 class="title1">Un domaine, un site</h1>
+        <h1 class="title1" id="produit" id="getFixed">Un domaine, un site</h1>
+
         <p class="sous-texte">C’est suivant vos besoins que nous définissons les fonctionnalités à implémenter sur votre site internet.</p>
 
             <section>
@@ -51,6 +33,54 @@
             </section>
     </div>
 
+    <h1 class="title1" id="about" id="getFixed">Qui sommes nous ?</h1>
+
+    <p class="sous-texte">Vu-Du.Net est une agence Web installée dans le Gers en Occitanie.
+Nous concevons des sites internet pour tout type d’activités : de l’association à la PME.
+La conception de sites internet gravite autour de 2 sphères : Avoir un beau site internet et un bon référencement. Pour nous, nous envisageons une 3ème sphère toute aussi importante : Répondre efficacement aux besoins spécifiques à l’entreprise. Il faut que le site internet serve aussi en interne à l’entreprise (Facturation cliente, Gestion d’agendas, Réservations de services, Suivi logistique, etc…)
+C’est pourquoi nous avons décidé de proposer un socle de base sur lequel nous allons greffer les outils dont vous avez besoin.
+</p>
+<h1 class="title1" id="service">Nos services</h1>
+<section>
+
+
+
+    <article class="product">
+
+        <p>
+        Dialogue Permanent <br>
+        Primordial pour que votre site soit fidèle à votre image, nous discuterons avant et pendant votre souscription chez nous.
+        </p>
+    </article>
+    
+    <article class="product">
+        <p>
+        Support technique <br>
+        Nous assurerons le support technique de votre site internet. Sauvegardes, Restaurations, Mises à jour de sécurité, etc…
+        </p>
+    </article>
+    
+    <article class="product">
+        <p>
+        A la carte <br>
+        Parce que votre activité est appelée à évoluer dans le temps, vos besoins également : ajouter/retirer les fonctionnalités désirées.
+        </p>
+    </article>
+</section>
+
+<script type="text/javascript">
+
+function fixDiv() {
+  var $cache = $('#getFixed'); 
+  if ($(window).scrollTop() > 100) 
+    $cache.css({'position': 'fixed', 'top': '10px'}); 
+  else
+    $cache.css({'position': 'relative', 'top': 'auto'});
+}
+$(window).scroll(fixDiv);
+fixDiv();
+
+</script>
 </body>
 
 </html>
