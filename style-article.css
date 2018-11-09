@@ -1,0 +1,38 @@
+.title-section {
+    padding-top: 10%;
+    padding-bottom: 2%;
+    font-size: 2em;
+    color: rgb(41, 41, 41);
+    top: 100px;
+    max-width: 60%;
+    margin: auto;
+    
+}
+
+.section-article {
+    color: grey;
+    font-size: 1.2em;
+    max-width: 60%;
+    margin: auto;
+}
+
+.article {
+    line-height: 150%;
+
+}
+
+.mini-titre {
+    text-decoration: underline;
+    
+}
+
+.text-decoration {
+    color: blueviolet;
+    font-style: italic;
+}
+
+.publish-url {
+    text-decoration: none;
+    color: blueviolet;
+    padding-bottom: 10%;
+}

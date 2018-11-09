@@ -1,0 +1,12 @@
+ .test-rond { width: 100px;
+     height: 100px;
+      background: blueviolet;
+       border-radius: 50%;
+ }
+
+ .test-image {
+    width: inherit;
+    padding-top: 15%;
+    border-radius: inherit;
+} 
+
