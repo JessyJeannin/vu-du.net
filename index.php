@@ -1,23 +1,23 @@
 <?php require 'inc/header.php'; ?>
 
 <body class="index">
-        <div class="home-text">
+    <img class="header-image" src="images/body.jpg" alt="">
+        <div class="presentation-text">
         <p>Ne restez pas invisible sur la toile. Offrez vous une présence web pour que votre activité soit reconnue de tous.
     Soyez "Vu-Du.Net" à partir de 30,00€/mois</p>
     </div>
-<div></div>
 
-    <div class="section">
+    <div>
 
-        <h1 class="title1" id="produit" id="getFixed">Un domaine, un site</h1>
+        <h1 class="title" id="produit" id="getFixed">Un domaine, un site</h1>
 
-        <p class="sous-texte">C’est suivant vos besoins que nous définissons les fonctionnalités à implémenter sur votre site internet.</p>
+        <p class="sous-titre">C’est suivant vos besoins que nous définissons les fonctionnalités à implémenter sur votre site internet.</p>
 
-            <section class="section-index">
+            <section class="section">
             
                 <article class="product">
                    <a href="">
-                       <div class="test8">
+                       <div class="background-product-image">
                             <img class="product-image" src="images/responsive-design-symbol.png" alt="">
                         </div> <br> 
                         <span class="subtile-product">Responsive</span> <br> 
@@ -27,7 +27,7 @@
         
                 <article class="product">
                  <a href="">
-                     <div class="test8">
+                     <div class="background-product-image">
                          <img class="product-image" src="images/coding.png" alt="">
                     </div> <br>
                     <span class="subtile-product">Vitrine Web</span> <br> 
@@ -37,7 +37,7 @@
         
                 <article class="product">
                  <a href="">
-                     <div class="test8">
+                     <div class="background-product-image">
                        <img class="product-image" src="images/online-shop.png" alt="">
                    </div> <br>
                    <span class="subtile-product">E-Commerce</span> <br> 
@@ -47,7 +47,7 @@
                 
                 <article class="product">
                 <a href="">
-                    <div class="test8">
+                    <div class="background-product-image">
                        <img class="product-image" src="images/maintenance.png" alt="">
                    </div> <br>
                    <span class="subtile-product">Modules spécifiques</span> <br>
@@ -57,42 +57,54 @@
             </section>
     </div>
 
-    <h1 class="title1" id="about" id="getFixed">Qui sommes nous ?</h1>
+    <h1 class="title" id="about" id="getFixed">Qui sommes nous ?</h1>
 
-    <p class="sous-texte">Vu-Du.Net est une agence Web installée dans le Gers en Occitanie. <br>
+    <p class="sous-titre">Vu-Du.Net est une agence Web installée dans le Gers en Occitanie. <br>
 Nous concevons des sites internet pour tout type d’activités : de l’association à la PME. <br>
 La conception de sites internet gravite autour de 2 sphères : Avoir un beau site internet et un bon référencement. Pour nous, nous envisageons une 3ème sphère toute aussi importante : Répondre efficacement aux besoins spécifiques à l’entreprise. Il faut que le site internet serve aussi en interne à l’entreprise (Facturation cliente, Gestion d’agendas, Réservations de services, Suivi logistique, etc…) <br>
 C’est pourquoi nous avons décidé de proposer un socle de base sur lequel nous allons greffer les outils dont vous avez besoin.
 </p>
-<h1 class="title1" id="service">Nos services</h1>
-<section class="section-index">
 
-    <article class="service">
+<h1 class="title" id="service">Nos services</h1>
 
-        <p class="sub-service">
-        <span class="subtile-product">Dialogue Permanent</span> <br>
-        Primordial pour que votre site soit fidèle à votre image, nous discuterons avant et pendant votre souscription chez nous.
-        </p>
-    </article>
+<section class="section">
+
+    <div class="service-section">
+    <img src="images/chat.png" alt="">
+        <article class="service-article">   
+            <p class="sub-service">
+            <span class="subtile-product">Dialogue Permanent</span> <br>
+            Primordial pour que votre site soit fidèle à votre image, nous discuterons avant et pendant votre souscription chez nous.
+            </p>
+        </article>
+    </div>
+
     
-    <article class="service">
-        <p class="sub-service">
-        <span class="subtile-product">Support technique</span> <br>
-        Nous assurerons le support technique de votre site internet. Sauvegardes, Restaurations, Mises à jour de sécurité, etc…
-        </p>
-    </article>
+    <div class="service-section">
+    <img src="images/tools-2.png" alt="">
+        <article class="service-article">
+        
+            <p class="sub-service">
+            <span class="subtile-product">Support technique</span> <br>
+            Nous assurerons le support technique de votre site internet. Sauvegardes, Restaurations, Mises à jour de sécurité, etc…
+            </p>
+        </article>
+    </div>
+
     
-    <article class="service">
-        <p class="sub-service">
-        <span class="subtile-product">A la carte</span> <br>
-        Parce que votre activité est appelée à évoluer dans le temps, vos besoins également : ajouter/retirer les fonctionnalités désirées.
-        </p>
-    </article>
+    <div class="service-section">
+    <img src="images/coding-2.png" alt="">
+        <article class="service-article">
+            <p class="sub-service">
+            <span class="subtile-product"> A la carte</span> <br>
+            Parce que votre activité est appelée à évoluer dans le temps, vos besoins également : ajouter/retirer les fonctionnalités désirées.
+            </p>
+    
+        </article>
+    </div>
 </section>
 
-
-
-<h1 class="title1" id="news">Dernières nouvelles</h1>
+<h1 class="title" id="news">Dernières nouvelles</h1>
 
             <div class="row-news-card" id="_news">
                 <div class="news-card">
