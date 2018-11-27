@@ -423,7 +423,7 @@ a {
     padding-left: 25%;
 }
 
-label, input {
+.form-col-1 label, input {
     margin-bottom: 1%;
 }
 .col-1 {
@@ -440,9 +440,20 @@ label, input {
     display: none;
 }
 
-input, textarea {
+.form-col-1 input, textarea {
     padding: 1%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.form-col-1 textarea:focus {
+    border-color: #0699d3;
+    box-shadow: 0 0 2px 1px #0699d3;
+}
+
+.form-col-1 input:focus {
+    border-color: #0699d3;
+    box-shadow: 0 0 2px 1px #0699d3;
 }
 
 .form-button {
@@ -579,6 +590,11 @@ input, textarea {
     margin-top: 1%;
 }
 
+.form-connect:focus {
+    border-color: #0699d3;
+    box-shadow: 0 0 2px 1px #0699d3;
+}
+
 
 
 
@@ -625,4 +641,44 @@ input, textarea {
     text-decoration: none;
     color: blueviolet;
     padding-bottom: 10%;
+}
+
+
+
+.forget-form {
+    margin-top: 10%;
+    padding-left: 40%;
+}
+
+.forget-form input {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+.accordeon-menu {
+    margin: auto;
+    max-width: 60%;
+}
+
+.accordeon-title {
+    background-color: green;
+    text-align: center;
+    margin: 0;
+    border: solid 1px black;
+    padding: 10px;
+    cursor: pointer;
+    color: #6d396d;
+}
+
+.accordeon-content {
+    background-color: #6d396d;
+   
 }

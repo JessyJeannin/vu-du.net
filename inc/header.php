@@ -115,7 +115,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
             <input type="checkbox" name="remember" value="1">Se souvenir de moi
             </label>
             
-            <p><a href="forget.php">Mot de passe oublié ?</a></p>
+            <p><a href="forget.php" for="modal-one">Mot de passe oublié ?</a></p>
             <p>Vous n'avez pas de compte ? <a href="register.php">Enregistrez-vous</a></p>
           </div>
           <div class="modal-footer">

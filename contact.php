@@ -57,7 +57,7 @@ if(empty($errors)) {
         ?>
 
     
-<form method="post" class="form">
+<form method="post">
 
 <div class="form-col-1">
 
