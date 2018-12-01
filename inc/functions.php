@@ -27,24 +27,34 @@ function logged_only(){
 
 
 
-function com_log() {
+
+function admin_log() {
 
   if(session_status() == PHP_SESSION_ACTIVE){
   }
 
-if (!isset($_SESSION['statut']) || $_SESSION['statut']!='1') {
-
-
+if (!isset($_SESSION['auth']->role_id) || $_SESSION['auth']->role_id != 1) {
   $_SESSION['flash']['danger'] = "Vous n'avez pas le droit d'acceder à cette page ";
-
-
   header("location: index.php");
-  exit;
+  exit();
  }
  session_write_close();
 
 }
 
+function user_log() {
+
+    if(session_status() == PHP_SESSION_ACTIVE){
+    }
+  
+  if (!isset($_SESSION['auth']->role_id) || $_SESSION['auth']->role_id != 2) {
+    $_SESSION['flash']['danger'] = "Vous n'avez pas le droit d'acceder à cette page ";
+    header("location: index.php");
+    exit();
+   }
+   session_write_close();
+  
+  }
 
 
 

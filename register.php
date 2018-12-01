@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php require 'inc/functions.php'; ?>
 
 <?php
@@ -52,16 +53,9 @@ if(empty($errors)) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-register.css">
-    <title>S'enregistrer</title>
-</head>
+<?php require 'inc/header.php'; ?>
 
-<h1>Nouvel utilisateur</h1>
+<h1 class="title">Nouvel utilisateur</h1>
 
 <?php if(!empty($errors)): ?>
 
@@ -81,23 +75,25 @@ if(empty($errors)) {
 
 <?php endif; ?>
 
-<form action="" method="POST" class="form-register">
+<form action="" method="POST" class="form-col-1">
 
-<label for="email">Email</label> <br>
-<input type="email" name="email" placeholder="exemple@exemple.com"> <br>
+<div class="col-1">
+    <label for="email">Email</label> <br>
+    <input type="email" name="email" placeholder="exemple@exemple.com"> <br>
+    
+    <label for="phone">Numéro de téléphone</label> <br>
+    <input type="tel" pattern="[0-0]{1}[0-9]{9}" placeholder="0123456789" name="phone"> <br>
+    
+    <label for="password">Mot de passe</label> <br>
+    <input type="password" name="password"> <br>
+    
+    <label for="password_confirm">Confirmez votre mot de passe</label> <br>
+    <input type="password" name="password_confirm"> <br>
+    
+    <label for="role_id"></label>
+    <input type="radio" name="role_id" value="2" checked style="visibility:hidden">
+</div>
 
-<label for="phone">Numéro de téléphone</label> <br>
-<input type="tel" pattern="[0-0]{1}[0-9]{9}" placeholder="0123456789" name="phone"> <br>
-
-<label for="password">Mot de passe</label> <br>
-<input type="password" name="password"> <br>
-
-<label for="password_confirm">Confirmez votre mot de passe</label> <br>
-<input type="password" name="password_confirm"> <br>
-
-<label for="role_id"></label>
-<input type="radio" name="role_id" value="2" checked style="visibility:hidden">
-
-<button type="submit">Valider</button>
+<button type="submit" class="btn-primary">Valider</button>
 
 </form>

@@ -1,6 +1,7 @@
 <?php 
 require 'inc/functions.php';
 logged_only();
+user_log();
 require 'inc/header.php'; 
 ?>
 

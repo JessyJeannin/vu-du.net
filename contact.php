@@ -55,7 +55,7 @@ if(empty($errors)) {
         }
     
         ?>
-
+<h1 class="title">Nous écrire</h1>
     
 <form method="post">
 
@@ -128,7 +128,7 @@ if(empty($errors)) {
 
 <div class="col-2">
 
-    <button type="submit" value="envoyer" class="form-button">Envoyer</button>
+    <button type="submit" value="envoyer" class="form-button btn-primary">Envoyer</button>
 
 </div>
 

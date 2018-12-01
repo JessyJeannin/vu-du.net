@@ -32,7 +32,7 @@ else {
 
 <?php require 'inc/header.php'; ?>
 
-<h1>Réinitialiser votre mot de passe</h1>
+<h1 class="title">Réinitialiser votre mot de passe</h1>
         
     <form action="" method="POST" class="form-col-1">
     
